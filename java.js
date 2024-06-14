@@ -74,4 +74,22 @@ imageUpload.addEventListener('change', function() {
 
   // Read the selected file as Data URL
   reader.readAsDataURL(file);
-});*/
+*/
+let signin=document.getElementById("signin");
+let signup=document.getElementById("signup");
+let signinbtn=document.getElementById("signinbtn");
+let signupbtn=document.getElementById("signupbtn");
+signupbtn.addEventListener("click",function(){
+    signin.style.display="none";
+
+    signup.style.display="block";
+})
+
+signinbtn.addEventListener("click",function(){
+    signin.style.display="block";
+    signup.style.display="none";
+   
+
+
+})
+
